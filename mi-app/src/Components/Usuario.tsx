@@ -10,7 +10,7 @@ interface User  {
 
 export const Usuario = () => {
 
-    const [user, setUser] = useState<User>(tempUser);
+    const [user, setUser] = useState<User>();
 
     const login = () => {
         setUser({ 
