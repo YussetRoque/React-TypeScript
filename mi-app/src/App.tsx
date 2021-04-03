@@ -8,6 +8,12 @@ import { ContadorRed } from './Components/ContadorRed';
 import { Formulario } from './Components/Formulario';
 import { Formulario2 } from './Components/Formulario2';
 
+import { DataProvider } from './contex/DataContex';
+
+import { Pagina1 } from './Components/Pagina1';
+import { Pagina2 } from './Components/Pagina2';
+import { BotonCambiarData } from './Components/BotonCambiarData';
+import React from 'react';
 
 
 function App() {
@@ -37,14 +43,29 @@ function App() {
 
      <br/>
      <Formulario2 />
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+
+     < h2 > Reaccionar: Context Api </h2>
+     <hr/>
+ 
+     <DataProvider> 
+     <div className="container">
+
+     <Pagina1 />
+     <br/>
+     <Pagina2 />
 
      <br/>
-     <br/>
-     <br/>
-     <br/>
-     <br/>
-     <br/>
-     <br/>
+        <BotonCambiarData />
+        </div>
+        </DataProvider>
+     
 
    </>
   );
